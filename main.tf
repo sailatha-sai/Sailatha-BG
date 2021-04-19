@@ -36,7 +36,7 @@ resource "aws_subnet" "terraform-blue-green" {
 locals {
   subnets = "${aws_subnet.terraform-blue-green.*.id}"
   }
-
+#
 resource "aws_instance" "example" {
     count  = 1
     ami = "ami-20ff515a"
