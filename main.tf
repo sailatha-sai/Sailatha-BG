@@ -60,7 +60,7 @@ resource "aws_instance" "example" {
 }
 
 resource "aws_lb_target_group_attachment" "terraform-1" {
-    target_group_arn                    = "arn:aws:elasticloadbalancing:us-east-1:376048985616:targetgroup/terraform-bluegreen/0b7aabebcfae1ac9"
+    target_group_arn                    = "arn:aws:elasticloadbalancing:us-east-1:376048985616:targetgroup/terraform-bluegreen/549d4c7fc6f56db0"
     target_id                           = "${aws_instance.example.0.id}"
     port                                = 80
   }
