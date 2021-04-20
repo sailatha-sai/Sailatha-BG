@@ -55,7 +55,7 @@ resource "aws_instance" "examplev2" {
                 EOF
 
     tags = {
-        Name = "terraform-blue"
+        Name = "terraform-green"
     }
 }
 
